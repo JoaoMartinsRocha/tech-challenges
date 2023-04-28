@@ -1,3 +1,5 @@
+const { Migration } = require('typeorm')
+
 const EntitySchema = require('typeorm').EntitySchema
 
 const Person = new EntitySchema({
@@ -37,6 +39,9 @@ const Person = new EntitySchema({
             cascade: true
         },
     },
+    
 })
 
+
 module.exports = Person
+
